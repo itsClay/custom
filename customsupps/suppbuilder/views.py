@@ -4,5 +4,11 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index")
+def endurance(request):
+    return render(request, "endurance.html", {})
+
+def energy(request):
+    return render(request, "energy.html", {})
+
+def strength(request):
+    return render(request, "strength.html", {})

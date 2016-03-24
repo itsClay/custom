@@ -1,7 +1,9 @@
 from django.conf.urls import url
 
-from . import views
+from .views import (endurance,strength,energy)
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^endurance/$', "suppbuilder.views.endurance"),
+    url(r'^strength/$', "suppbuilder.views.strength"),
+    url(r'^energy/$', "suppbuilder.views.energy"),
 ]
